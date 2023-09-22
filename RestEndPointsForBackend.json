@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "522adbc5-6403-43ea-99fc-7c03eddc461c",
+		"name": "IliaStore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29041927"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save All Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 19,\r\n        \"title\": \"avant-garde lamp\",\r\n        \"company\": \"Modenza\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": true,\r\n        \"createdAt\": \"2023-08-10T10:07:41.876Z\",\r\n        \"updatedAt\": \"2023-08-10T10:16:43.298Z\",\r\n        \"publishedAt\": \"2023-08-10T10:07:44.157Z\",\r\n        \"category\": \"Kids\",\r\n        \"image\": \"https://images.pexels.com/photos/943150/pexels-photo-943150.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"17999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#33FF57\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 12,\r\n        \"title\": \"chic chair\",\r\n        \"company\": \"Luxora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T09:32:58.392Z\",\r\n        \"updatedAt\": \"2023-08-10T09:33:03.728Z\",\r\n        \"publishedAt\": \"2023-08-10T09:33:03.598Z\",\r\n        \"category\": \"Chairs\",\r\n        \"image\": \"https://images.pexels.com/photos/5705090/pexels-photo-5705090.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"33999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 6,\r\n        \"title\": \"coffee table\",\r\n        \"company\": \"Modenza\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": true,\r\n        \"createdAt\": \"2023-08-02T14:32:02.775Z\",\r\n        \"updatedAt\": \"2023-08-04T07:35:16.880Z\",\r\n        \"publishedAt\": \"2023-08-02T14:32:05.491Z\",\r\n        \"category\": \"Tables\",\r\n        \"image\": \"https://images.pexels.com/photos/3679601/pexels-photo-3679601.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\r\n        \"price\": \"17999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 7,\r\n        \"title\": \"comfy bed\",\r\n        \"company\": \"Homestead\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": true,\r\n        \"createdAt\": \"2023-08-02T14:34:10.146Z\",\r\n        \"updatedAt\": \"2023-08-08T14:06:28.575Z\",\r\n        \"publishedAt\": \"2023-08-02T14:34:13.604Z\",\r\n        \"category\": \"Beds\",\r\n        \"image\": \"https://images.pexels.com/photos/1034584/pexels-photo-1034584.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"12999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\"]\r\n    },\r\n    {\r\n        \"id\": 13,\r\n        \"title\": \"contemporary sofa\",\r\n        \"company\": \"Comfora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T09:34:24.429Z\",\r\n        \"updatedAt\": \"2023-08-10T09:34:27.095Z\",\r\n        \"publishedAt\": \"2023-08-10T09:34:26.981Z\",\r\n        \"category\": \"Sofas\",\r\n        \"image\": \"https://images.pexels.com/photos/1571459/pexels-photo-1571459.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"15999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 20,\r\n        \"title\": \"cutting-edge bed\",\r\n        \"company\": \"Homestead\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:08:58.922Z\",\r\n        \"updatedAt\": \"2023-08-10T10:09:01.251Z\",\r\n        \"publishedAt\": \"2023-08-10T10:09:01.135Z\",\r\n        \"category\": \"Beds\",\r\n        \"image\": \"https://images.pexels.com/photos/2029694/pexels-photo-2029694.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"8499\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FFFF00\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 16,\r\n        \"title\": \"futuristic shelves\",\r\n        \"company\": \"Luxora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:02:51.583Z\",\r\n        \"updatedAt\": \"2023-08-10T10:02:53.797Z\",\r\n        \"publishedAt\": \"2023-08-10T10:02:53.674Z\",\r\n        \"category\": \"Kids\",\r\n        \"image\": \"https://images.pexels.com/photos/2177482/pexels-photo-2177482.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"9499\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#33FF57\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 21,\r\n        \"title\": \"glass table\",\r\n        \"company\": \"Modenza\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:10:46.803Z\",\r\n        \"updatedAt\": \"2023-08-10T10:10:48.971Z\",\r\n        \"publishedAt\": \"2023-08-10T10:10:48.858Z\",\r\n        \"category\": \"Tables\",\r\n        \"image\": \"https://images.pexels.com/photos/1571452/pexels-photo-1571452.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"15999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 22,\r\n        \"title\": \"King Bed\",\r\n        \"company\": \"Homestead\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:11:38.696Z\",\r\n        \"updatedAt\": \"2023-08-10T10:11:40.915Z\",\r\n        \"publishedAt\": \"2023-08-10T10:11:40.802Z\",\r\n        \"category\": \"Beds\",\r\n        \"image\": \"https://images.pexels.com/photos/6489083/pexels-photo-6489083.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"18999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FF5733\"]\r\n    },\r\n    {\r\n        \"id\": 24,\r\n        \"title\": \"Lounge Chair\",\r\n        \"company\": \"Luxora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:13:29.629Z\",\r\n        \"updatedAt\": \"2023-08-10T10:15:29.354Z\",\r\n        \"publishedAt\": \"2023-08-10T10:13:31.792Z\",\r\n        \"category\": \"Chairs\",\r\n        \"image\": \"https://images.pexels.com/photos/2082090/pexels-photo-2082090.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"25999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 11,\r\n        \"title\": \"Minimalist Shelves\",\r\n        \"company\": \"Artifex\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T09:31:43.653Z\",\r\n        \"updatedAt\": \"2023-08-10T09:31:46.013Z\",\r\n        \"publishedAt\": \"2023-08-10T09:31:45.900Z\",\r\n        \"category\": \"Kids\",\r\n        \"image\": \"https://images.pexels.com/photos/439227/pexels-photo-439227.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"43999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 5,\r\n        \"title\": \"modern sofa\",\r\n        \"company\": \"Comfora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-02T14:25:10.447Z\",\r\n        \"updatedAt\": \"2023-08-08T14:04:21.619Z\",\r\n        \"publishedAt\": \"2023-08-02T14:25:28.344Z\",\r\n        \"category\": \"Sofas\",\r\n        \"image\": \"https://images.pexels.com/photos/6480707/pexels-photo-6480707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\r\n        \"price\": \"29999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 9,\r\n        \"title\": \"modern table\",\r\n        \"company\": \"Modenza\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-08T14:02:24.368Z\",\r\n        \"updatedAt\": \"2023-08-08T14:53:24.452Z\",\r\n        \"publishedAt\": \"2023-08-08T14:02:33.536Z\",\r\n        \"category\": \"Tables\",\r\n        \"image\": \"https://images.pexels.com/photos/447592/pexels-photo-447592.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"38999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#33FF57\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 18,\r\n        \"title\": \"reclining sofa\",\r\n        \"company\": \"Comfora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:05:57.858Z\",\r\n        \"updatedAt\": \"2023-08-10T10:06:01.554Z\",\r\n        \"publishedAt\": \"2023-08-10T10:06:01.438Z\",\r\n        \"category\": \"Sofas\",\r\n        \"image\": \"https://images.pexels.com/photos/4316737/pexels-photo-4316737.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"32999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#3366FF\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 25,\r\n        \"title\": \"Sectional Sofa\",\r\n        \"company\": \"Comfora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:14:14.760Z\",\r\n        \"updatedAt\": \"2023-08-10T10:14:17.029Z\",\r\n        \"publishedAt\": \"2023-08-10T10:14:16.909Z\",\r\n        \"category\": \"Sofas\",\r\n        \"image\": \"https://images.pexels.com/photos/4857775/pexels-photo-4857775.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"35999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#3366FF\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 10,\r\n        \"title\": \"sleek bed\",\r\n        \"company\": \"Homestead\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T09:30:26.259Z\",\r\n        \"updatedAt\": \"2023-08-10T09:30:28.876Z\",\r\n        \"publishedAt\": \"2023-08-10T09:30:28.763Z\",\r\n        \"category\": \"Beds\",\r\n        \"image\": \"https://images.pexels.com/photos/16869701/pexels-photo-16869701/free-photo-of-modern-luxury-real-estate-property-interior-bedroom.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"53999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FFFF00\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"title\": \"sleek chair\",\r\n        \"company\": \"Luxora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-01T11:14:57.336Z\",\r\n        \"updatedAt\": \"2023-08-10T10:17:13.540Z\",\r\n        \"publishedAt\": \"2023-08-01T11:15:39.281Z\",\r\n        \"category\": \"Chairs\",\r\n        \"image\": \"https://images.pexels.com/photos/116910/pexels-photo-116910.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"19999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#3366FF\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 14,\r\n        \"title\": \"streamlined table\",\r\n        \"company\": \"Modenza\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T09:36:07.565Z\",\r\n        \"updatedAt\": \"2023-08-10T09:36:09.798Z\",\r\n        \"publishedAt\": \"2023-08-10T09:36:09.688Z\",\r\n        \"category\": \"Tables\",\r\n        \"image\": \"https://images.pexels.com/photos/890669/pexels-photo-890669.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"20999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FF5733\", \"#3366FF\"]\r\n    },\r\n    {\r\n        \"id\": 15,\r\n        \"title\": \"stylish bed\",\r\n        \"company\": \"Homestead\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:01:20.801Z\",\r\n        \"updatedAt\": \"2023-08-10T10:01:24.100Z\",\r\n        \"publishedAt\": \"2023-08-10T10:01:23.986Z\",\r\n        \"category\": \"Beds\",\r\n        \"image\": \"https://images.pexels.com/photos/6758398/pexels-photo-6758398.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"16999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FF5733\"]\r\n    },\r\n    {\r\n        \"id\": 23,\r\n        \"title\": \"Toy Shelf\",\r\n        \"company\": \"Luxora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:12:28.626Z\",\r\n        \"updatedAt\": \"2023-08-10T10:12:30.715Z\",\r\n        \"publishedAt\": \"2023-08-10T10:12:30.599Z\",\r\n        \"category\": \"Kids\",\r\n        \"image\": \"https://images.pexels.com/photos/3932929/pexels-photo-3932929.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"7999\",\r\n        \"shipping\": false,\r\n        \"colors\": [\"#33FF57\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 17,\r\n        \"title\": \"velvet sofa\",\r\n        \"company\": \"Luxora\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-10T10:04:26.080Z\",\r\n        \"updatedAt\": \"2023-08-10T10:04:29.084Z\",\r\n        \"publishedAt\": \"2023-08-10T10:04:28.969Z\",\r\n        \"category\": \"Chairs\",\r\n        \"image\": \"https://images.pexels.com/photos/4916510/pexels-photo-4916510.jpeg?auto=compress&cs=tinysrgb&w=1600\",\r\n        \"price\": \"28999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#FF5733\", \"#33FF57\", \"#FFFF00\"]\r\n    },\r\n    {\r\n        \"id\": 8,\r\n        \"title\": \"wooden shelves\",\r\n        \"company\": \"Artifex\",\r\n        \"description\": \"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\r\n        \"featured\": false,\r\n        \"createdAt\": \"2023-08-02T14:36:43.227Z\",\r\n        \"updatedAt\": \"2023-08-04T07:35:59.208Z\",\r\n        \"publishedAt\": \"2023-08-02T14:36:46.122Z\",\r\n        \"category\": \"Kids\",\r\n        \"image\": \"https://images.pexels.com/photos/3932930/pexels-photo-3932930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\r\n        \"price\": \"11999\",\r\n        \"shipping\": true,\r\n        \"colors\": [\"#33FF57\", \"#3366FF\"]\r\n    }\r\n]\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/products",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Product",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Featured Prodcuts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products?featured=true",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "featured",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products/80",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paginate Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products?page=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/products?search= &category=Tables&company=Modenza&order=a-z&price=10000&shipping=on",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": " "
+						},
+						{
+							"key": "category",
+							"value": "Tables"
+						},
+						{
+							"key": "company",
+							"value": "Modenza"
+						},
+						{
+							"key": "order",
+							"value": "a-z"
+						},
+						{
+							"key": "price",
+							"value": "10000"
+						},
+						{
+							"key": "shipping",
+							"value": "on"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"username\":\"iliasRouchdi\",\"email\":\"iliasrouchdi21@gmail.com\",\"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/local/auth/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"identifier\":\"iliasrouchdi21@gmail.com\",\"password\":\"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/local/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"local",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Order (Authenticated)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJpbHlhc3Nyb3VjaGRpMTBAZ21haWwuY29tIn0.WPTZj3poj-8F1czV_xxKTvj1A5zlg9MSHyLEPSFuA6Ze2dVnc_TpedjJgccMPl6ba8oQi_RPkpu-GAdHpRuqMw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"address\":\"agadir\",\"createdAt\":\"2023-09-19T11:48:34.157Z\",\"updatedAt\":\"2023-09-19T11:48:34.157Z\",\"publishedAt\":\"2023-09-19T11:48:34.149Z\",\"name\":\"ilias\",\"orderTotal\":\"$2,344.87\",\"cartItems\":[{\"image\":\"https://images.pexels.com/photos/943150/pexels-photo-943150.jpeg?auto=compress&cs=tinysrgb&w=1600\",\"price\":\"17999\",\"title\":\"avant-garde lamp\",\"amount\":1,\"cartId\":\"19#3366FF\",\"company\":\"Modenza\",\"productId\":19,\"description\":\"Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge\",\"productColor\":\"#3366FF\"}],\"numItemsInCart\":10}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Orders (Authenticated)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
