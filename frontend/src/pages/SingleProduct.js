@@ -7,7 +7,8 @@ import {addItem} from '../features/cart/CartSlice'
 export const loader =async({params})=>{
   
   const response = await customFetch.get(`/products/${params.id}`)
-  return {product : response.data.data};
+  console.log(response)
+  return {product : response.data};
 
 }
 
@@ -16,7 +17,8 @@ const SingleProduct = () => {
   
   const {product} = useLoaderData();
   
-  const {image , title , price ,description ,colors ,company} = product;
+  
+  const {image, title , price ,description ,colors ,company} = product ;
 
   const dollarsAmount = formatPrice(price);
   const [amount , setAmount] = useState(1);

@@ -16,7 +16,9 @@ public class CONSTANTS {
     "Beds"};
     public static final String REGISTER_PATH="/local/auth/register";
     public static final String SECRECT_KEY = "bQeThWmZq4t7w!z$C&F)J@NcRfUjXn2r5u8x/A?D*G-KaPdSgVkYp3s6v9y$B&E)";
-    
+
+    public static  final Long MAX_AGE = 3600L;
+    public static final  int CORS_FILTER_ORDER =-102;
 
     
 }
